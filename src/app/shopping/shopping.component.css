@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Verdana';
+  src: url(../../../verdana.ttf);
+}
+
+.shopping-container, .cart-container, button {
+  font-family: Verdana;
+}
+
+.shopping-container {
+  display: inline-flex;
+}
+
+.cart-items {
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 3px 4px #ccc;
+}
+
+.price-container {
+  display: inline-flex;
+  width: 200px;
+}
+
+.price-container p {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.price-container p b {
+  font-size: 16px;
+}
+
+#dprice {
+  color: green;
+}
+
+.addcart {
+  margin:5px;
+  width: 100px;
+  border-radius: 13px;
+  padding: 8px;
+  background-color: yellow;
+  color: #000;
+}
+
+.cart-container {
+  text-align: center;
+}

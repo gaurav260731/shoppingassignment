@@ -1,0 +1,8 @@
+.footer-container, p {
+  text-align: center;
+}
+
+mat-toolbar {
+  position: relative;
+  bottom: 0;
+}

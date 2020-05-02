@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Verdana';
+  src: url(../../../verdana.ttf);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  float: right;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 5px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+#sval {
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+
+

@@ -1,0 +1,16 @@
+<app-header [cartlenval] = 'finalcartval'></app-header>
+<div class="shopping-container" *ngFor="let val of data; let i=index;">
+  <div class="cart-items" id={{val.productid}}>
+    <img src="{{val.imageurl}}" alt="{{val.name}}" width="200" height="200">
+    <p>{{val.name}}</p>
+    <div class="price-container">
+      <p><b>&#x20b9;{{val.discount}}</b></p>
+      <p>{{val.price}}</p>
+      <p id="dprice"><b>{{val.pdiscount}}</b></p>
+    </div>
+    <div class="cart-container">
+      <button class="addcart" (click)="addCart(i)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Verdana';
+  src: url(../../../verdana.ttf);
+}
+
+h4 {
+  font-family: Verdana;
+  text-align: center;
+}
+
+button {
+  left: 20%;
+}
+
+

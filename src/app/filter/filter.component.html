@@ -1,0 +1,15 @@
+<div class="filter-container">
+<h4>Filters</h4>
+<mat-slider
+        class="example-margin"
+        [disabled]="disabled"
+        [invert]="invert"
+        [max]="max"
+        [min]="min"
+        [step]="step"
+        [thumbLabel]="thumbLabel"
+        [tickInterval]="getSliderTickInterval()"
+        [vertical]="vertical">
+    </mat-slider><br>
+    <button mat-flat-button color="primary">Apply</button>
+</div>

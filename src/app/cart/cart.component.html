@@ -1,0 +1,29 @@
+<app-header [cartlenval]="finalcartval"></app-header>
+<div class="shopping-container" *ngFor="let val of cartval;let i=index;">
+  <img src="{{val.imageurl}}" alt="{{val.name}}" width="200" height="200">
+  <div class="cart-items" id={{val.productid}}>
+    <p>{{val.name}}</p>
+    <div class="price-container">
+      <p><b>&#x20b9;{{val.discount}}</b></p>
+      <p>{{val.price}}</p>
+      <p id="dprice"><b>{{val.pdiscount}}</b></p>
+    </div>
+  </div>
+  <div class="qty-item">
+    <input (change)="updateTotal()" [(ngModel)]="val.qt" type="number" class="form-control">
+  </div>
+  <div class="remove-item">
+    <button (click)="removeItem(i)">Remove</button>
+  </div>
+</div>
+<div class="pay-container">
+  <p>PRICE DETAILS </p>
+  <hr/>
+  <span class="amount-item" *ngIf="bill == 0">Total Payable <span style="float:right;margin-right: 10px;">&#x20b9;0</span></span>
+  <span class="amount-item" *ngIf="bill !== 0">Total Payable  <span style="float:right;margin-right: 10px;">&#x20b9;{{bill}}</span></span>
+</div>
+<div class="noitem-container" *ngIf="bill == 0" >
+ <h2>No items added to cart!</h2>
+</div>
+
+

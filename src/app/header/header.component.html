@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <a routerLink="/"><i class="fa fa-star fa-1x"></i>My Shopping</a>
+  <span class="spacer"></span>
+<ul>
+  <li>
+    <input type="text" placeholder="Search the Item" #searchval id="sval"/>
+    <a routerLink="/" alt="search" routerLinkActive="mat-accent"><button class="fa fa-search fa-1x" (click)="check(searchval.value)"></button></a>
+  </li>
+  <li><a routerLink="/cart" alt="cart" routerLinkActive="mat-accent"><i class="fa fa-shopping-cart fa-1x"></i></a>{{cartlenval}}</li>
+</ul>
+</mat-toolbar>
