@@ -87,7 +87,7 @@ export class ShoppingComponent implements OnInit {
   addCart(index) {
     this.cartdata = this.data[index];
     let data = localStorage.getItem('cart');
-    if (data !== null){
+    if (data !== "null"){
       this.cartvalue = JSON.parse(data);
     }
     this.cartvalue.push(this.cartdata);
