@@ -16,7 +16,12 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.getCartData();
-    this.finalcartval  = this.cartval.length;
+    if (this.bill !== 0) {
+      this.finalcartval  = this.cartval.length;
+    } else {
+      this.finalcartval = 0;
+    }
+
   }
 
   getCartData() {

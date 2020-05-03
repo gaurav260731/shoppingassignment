@@ -38,5 +38,20 @@ button {
   border-bottom: 1px solid;
 }
 
+.cartlenval {
+  font-size: 15px;
+    padding: -3px;
+    background: red;
+    border-radius: 50%;
+    width: 23px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    padding-bottom: 5px;
+    padding: -7px;
+    height: 22px;
+    text-align: center;
+}
+
 
 

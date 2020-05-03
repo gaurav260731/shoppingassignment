@@ -68,6 +68,7 @@ export class ShoppingComponent implements OnInit {
 
   ];
 
+
   cartproducts: any;
   finalcartval = 0;
   cartdata: any;
@@ -76,7 +77,7 @@ export class ShoppingComponent implements OnInit {
 
   ngOnInit() {
     let data = localStorage.getItem('cart');
-    if( data !== "null") {
+    if ( data !== "null") {
       this.cartproducts = JSON.parse(data);
       this.finalcartval = this.cartproducts.length;
     } else {
@@ -87,7 +88,7 @@ export class ShoppingComponent implements OnInit {
   addCart(index) {
     this.cartdata = this.data[index];
     let data = localStorage.getItem('cart');
-    if (data !== "null"){
+    if (data !== "null") {
       this.cartvalue = JSON.parse(data);
     }
     this.cartvalue.push(this.cartdata);
@@ -95,7 +96,6 @@ export class ShoppingComponent implements OnInit {
     localStorage.setItem('cart', JSON.stringify(this.cartvalue));
     this.cartproducts = this.cartvalue;
     this.finalcartval = this.cartproducts.length;
-    console.log(" This is cart product length" + this.finalcartval);
   }
 
   updateCartData(updatedval) {
@@ -108,6 +108,6 @@ export class ShoppingComponent implements OnInit {
   //   this.cartdata = this.cartdata.filter(res => res.name.startsWith(value));
   //   console.log(this.cartdata);
   //   }
-  //}
+  // }
 
 }

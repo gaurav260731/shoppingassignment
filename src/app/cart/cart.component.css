@@ -86,11 +86,16 @@
 }
 
 .noitem-container {
+  min-height: 615px;
   height: 350px;
 }
 
 .noitem-container h2{
   margin: 10px;
+}
+
+.mat-drawer-content {
+  min-height: 615px;
 }
 
 
